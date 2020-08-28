@@ -1,4 +1,3 @@
-import schedule
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -44,6 +43,3 @@ def scrape_data():
 
 if __name__=='__main__':
     scrape_data()
-    schedule.every(10).minutes.do(scrape_data)
-    while 1:
-        schedule.run_pending()
